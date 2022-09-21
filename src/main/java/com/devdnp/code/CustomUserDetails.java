@@ -1,10 +1,11 @@
-package com.hipradeep.code;
+package com.devdnp.code;
 
 import java.util.Collection;
 
-import com.hipradeep.code.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import com.devdnp.code.model.User;
 
 public class CustomUserDetails implements UserDetails {
 

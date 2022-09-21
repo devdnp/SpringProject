@@ -1,4 +1,4 @@
-package com.hipradeep.code;
+package com.devdnp.code;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

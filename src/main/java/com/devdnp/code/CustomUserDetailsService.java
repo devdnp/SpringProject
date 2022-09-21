@@ -1,10 +1,11 @@
-package com.hipradeep.code;
+package com.devdnp.code;
 
-import com.hipradeep.code.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.devdnp.code.model.User;
 
 public class CustomUserDetailsService implements UserDetailsService {
 

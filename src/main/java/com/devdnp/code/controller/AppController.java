@@ -1,15 +1,16 @@
-package com.hipradeep.code.controller;
+package com.devdnp.code.controller;
 
 import java.util.List;
 
-import com.hipradeep.code.UserRepository;
-import com.hipradeep.code.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import com.devdnp.code.UserRepository;
+import com.devdnp.code.model.User;
 
 @Controller
 public class AppController {

@@ -1,8 +1,9 @@
-package com.hipradeep.code;
+package com.devdnp.code;
 
-import com.hipradeep.code.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+
+import com.devdnp.code.model.User;
 
 import java.util.Optional;
 

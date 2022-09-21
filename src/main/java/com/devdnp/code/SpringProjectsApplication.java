@@ -1,4 +1,4 @@
-package com.hipradeep.code;
+package com.devdnp.code;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

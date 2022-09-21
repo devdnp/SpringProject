@@ -1,4 +1,4 @@
-package com.hipradeep.code.model;
+package com.devdnp.code.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,8 +1,7 @@
-package com.hipradeep.code;
+package com.devdnp.code;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.hipradeep.code.model.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -10,6 +9,9 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.annotation.Rollback;
+
+import com.devdnp.code.UserRepository;
+import com.devdnp.code.model.User;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
@@ -26,9 +28,9 @@ public class UserRepositoryTests {
 	public void testCreateUser() {
 		User user = new User();
 		user.setEmail("keshav@gmail.com");
-		user.setPassword("maurya");
+		user.setPassword("vihari");
 		user.setFirstName("keshav");
-		user.setLastName("maurya");
+		user.setLastName("vihari");
 		
 		User savedUser = repo.save(user);
 		
@@ -40,7 +42,7 @@ public class UserRepositoryTests {
 	
 	@Test
 	public void testFindByEmail() {
-		String email = "pradeepmaurya.cse@gmail.com";
+		String email = "durgeshpandey.cse@gmail.com";
 		User user = repo.findByEmail(email);
 		
 		assertThat(user.getEmail()).isEqualTo(email);
